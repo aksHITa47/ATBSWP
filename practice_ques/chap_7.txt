@@ -107,6 +107,7 @@ but not the following:
 
     '12,34,567' (which has only two digits between the commas)
     '1234' (which lacks commas)
+    
 
     re.compile(r'\d|\d{2}|\d{3}(,\d{3})*$')
 
@@ -124,7 +125,9 @@ but not the following:
     'Watanabe' (which has no first name)
     'Haruto watanabe' (where Watanabe is not capitalized)
      
+     
      re.compile(r'^[A-Z]\w+ Watanabe')
+
 
 
 22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
