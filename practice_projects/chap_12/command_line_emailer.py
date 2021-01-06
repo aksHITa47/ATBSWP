@@ -10,7 +10,7 @@ browser.get(url)
 
 # Login email Id
 loginElem = browser.find_element_by_css_selector("#identifierId")
-loginElem.send_keys("saritaknp0512@gmail.com")
+loginElem.send_keys("<sender_email_id>")
 
 # Click Next
 submitElem = browser.find_element_by_css_selector(".VfPpkd-RLmnJb")
@@ -18,7 +18,7 @@ submitElem.click()
 
 # Login Password
 passElem = browser.find_element_by_css_selector("#password > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)")
-passElem.send_keys("04061973ss")
+passElem.send_keys("<password>")
 
 # Click Next
 submit=browser.find_element_by_css_selector(".VfPpkd-LgbsSe-OWXEXe-k8QpJ > div:nth-child(3)")
@@ -26,7 +26,7 @@ submit.click()
 
 # Receiver's ID
 sendto = browser.find_element_by_css_selector("#\\:qf")
-sendto.send_keys("akshitasingh2411@gmail.com")
+sendto.send_keys("<receiver_email_id>")
 
 # Compose Mail
 body = browser.find_element_by_css_selector("#\\:r2")
